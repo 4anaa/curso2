@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmesFlix - Streaming de Filmes Fictícios</title>
+    <style>
+        /* Reset de estilos e estilos globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #eee;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ccc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .filme {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .filme div {
+            width: 250px;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .filme div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .filme img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .filme img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FilmesFlix - Streaming de Filmes Fictícios</h1>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Filmes</a>
+        <a href="#">Séries</a>
+        <a href="#">Novidades</a>
+        <a href="#">Minha Lista</a>
+    </nav>
+    <div class="container">
+        <h2>Filmes em Destaque</h2>
+        <div class="filme">
+            <div>
+                <img src="imagem1.jpg" alt="A volta dos que não foram">
+                <h3>Nome do Filme</h3>
+            </div>
+            <div>
+                <img src="imagem2.jpg" alt="As tranças do rei careca">
+                <h3>Nome do Filme</h3>
+            </div>
+            <div>
+                <img src="imagem3.jpg" alt="O grito dos cegos">
+                <h3>Nome do Filme</h3>
+            </div>
+            <!-- Adicione mais filmes conforme necessário -->
+        </div>
+    </div>
+</body>
+</html>
